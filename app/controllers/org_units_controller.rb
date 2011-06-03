@@ -1,10 +1,12 @@
 class OrgUnitsController < ApplicationController
 
   def meta_info
+    @address = get_address
     respond_to :xml
   end
 
   def description
+    @address = get_address
     respond_to :xml
   end
 
@@ -13,6 +15,7 @@ class OrgUnitsController < ApplicationController
   end
 
   def search
+    @address = get_address
     @keyword = params[:keyword].gsub("%", "\%").gsub("_", "\_")
     @start = params[:start] || '1'
     @end = params[:end] || '20'

@@ -1,6 +1,7 @@
 class OrgansController < ApplicationController
 
   def list
+    @address = get_address
     @start = params[:start] || '1'
     @end = params[:end] || '5'
     @next = @end.to_i+1

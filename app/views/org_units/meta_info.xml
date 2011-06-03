@@ -1,4 +1,4 @@
-<service name="OrgUnits" url="http://localhost:3003">
+<service name="OrgUnits" url="<%=@address%>">
   <provider>G06</provider>
   <serviceID>ou</serviceID>
   <type>organizational unit</type>
