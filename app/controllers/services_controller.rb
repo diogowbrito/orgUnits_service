@@ -1,6 +1,7 @@
 class ServicesController < ApplicationController
 
   def list
+    @address = get_address
     @start = params[:start] || '1'
     @end = params[:end] || '7'
     @next = @end.to_i+1
