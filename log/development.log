@@ -1,0 +1,1102 @@
+  [1m[36mSQL (24.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateOrgans (20110521131522)
+Migrating to CreateSecretaries (20110521131537)
+Migrating to CreateServices (20110521131559)
+Migrating to CreateSections (20110521131641)
+Migrating to CreateDepartments (20110521131658)
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `departments`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `departments`
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `organs`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `organs`
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `secretaries`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `secretaries`
+  [1m[36mSQL (0.4ms)[0m  [1mdescribe `sections`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `sections`
+  [1m[36mSQL (0.6ms)[0m  [1mdescribe `services`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `services`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `departments`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Matemática', 'DM', 'Ed. VII', 'http://www.dmat.fct.unl.pt/fct/index.do?sub=inicio', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Informática', 'DI', 'Ed. II', 'http://www.di.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Ciências e Engenharia do Ambiente', 'DCEA', 'Edifício Departamental', 'http://www.ambientenanova.org/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Ciências dos Materiais', 'DCM', 'Ed. II', 'http://www.dcm.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Ciências da Terra', 'DCT', 'Ed. IX', 'http://www.dct.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Engenharia Civil', 'DEC', 'Ed. IX', 'http://www.dec.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Engenharia Electrotécnica', 'DEE', 'Ed. X', 'http://www.dee.fct.unl.pt/v2/pages/default.html', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Engenharia Mecânica e Industrial', 'DEMI', 'Ed. VIII', 'http://www.demi.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Física', 'DF', 'Ed. I', 'http://www.df.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Química', 'DQ', 'Edifício Departamental', 'http://www.dq.fct.unl.pt/index_in.asp', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Ciências Sociais Aplicadas', 'DCSA', 'Ed. VII', 'http://www.dcsa.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Conservação e Restauro', 'DCR', 'Edifício Departamental', 'http://www.dcr.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `departments` (`department_name`, `symbol`, `building`, `site`, `created_at`, `updated_at`) VALUES ('Departamento de Ciências da Vida', 'DCV', 'Edifício Departamental', 'http://www.dcv.fct.unl.pt/', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mdescribe `organs`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `organs` (`organ_name`, `building`, `space`, `president`, `subdirector`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Conselho de Faculdade', 'Ed. I', '1º Piso', 'Prof. Doutor E. Maranha das Neves', NULL, 'Conselho de Faculdade Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'pres-cf@fct.unl.pt', '351 212 947 881', NULL, '351 212 948 329', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `organs` (`organ_name`, `building`, `space`, `president`, `subdirector`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Director', 'Ed. I', '1º Piso', 'Prof. Doutor Fernando Santana', NULL, 'Direcção Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'director@fct.unl.pt ', '351 212 948 300', '15001', '351 212 941 999', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `organs` (`organ_name`, `building`, `space`, `president`, `subdirector`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Conselho Executivo', 'Ed. I', '1º Piso', 'Prof. Doutor Fernando Santana', NULL, 'Conselho Executivo Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'sec-dir@fct.unl.pt', '351 212 948 594', '15001', '351 212 941 999', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `organs` (`organ_name`, `building`, `space`, `president`, `subdirector`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Conselho de Gestão', 'Ed. I', '1º Piso', 'Prof. Doutor Fernando Santana', NULL, 'Conselho de Gestão Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'sec-dir@fct.unl.pt', '351 212 948 300', '15001', '351 212 941 999', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.3ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `organs` (`organ_name`, `building`, `space`, `president`, `subdirector`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Conselho Cientifico', 'Ed. I', '1º Piso', NULL, 'Prof. Doutor José Legatheaux Martins', 'Conselho Científico Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'sec-cc@fct.unl.pt', '351 212 948 538', '15101', '351 212 948 378', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `organs` (`organ_name`, `building`, `space`, `president`, `subdirector`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Conselho Pedagógico', 'Ed. I', '1º Piso', NULL, 'Prof. Doutor Jorge Lampreia', 'Conselho Pedagógico Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'c.pedagogico@fct.unl.pt', '351 212 948 544', '15201', '351 212 949 657', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  describe `secretaries`
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `secretaries` (`organ_id`, `secretary_name`, `email`, `created_at`, `updated_at`) VALUES (1, 'Carla Mota', NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.9ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `secretaries` (`organ_id`, `secretary_name`, `email`, `created_at`, `updated_at`) VALUES (2, 'Elisabete Carreira', 'sec-direccao@fct.unl.pt ', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `secretaries` (`organ_id`, `secretary_name`, `email`, `created_at`, `updated_at`) VALUES (2, 'Celma Padamo', 'sec-dir@fct.unl.pt', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `secretaries` (`organ_id`, `secretary_name`, `email`, `created_at`, `updated_at`) VALUES (2, 'Sónia Ferreira', 'smm@fct.unl.pt', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `secretaries` (`organ_id`, `secretary_name`, `email`, `created_at`, `updated_at`) VALUES (5, 'Amila Resende', NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `secretaries` (`organ_id`, `secretary_name`, `email`, `created_at`, `updated_at`) VALUES (5, 'Fátima Antunes', NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `secretaries` (`organ_id`, `secretary_name`, `email`, `created_at`, `updated_at`) VALUES (6, 'Paula Almeida', NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `secretaries` (`organ_id`, `secretary_name`, `email`, `created_at`, `updated_at`) VALUES (6, 'Andreia Machado', NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mdescribe `services`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `services` (`service_name`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Divisão de Recursos Financeiros', 'Ed. I', '1º Piso', 'Anabela Gomes', NULL, NULL, NULL, NULL, NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `services` (`service_name`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Divisão de Recursos Humanos', 'Ed. I', '1º Piso', 'Rita Monteiro', NULL, NULL, NULL, NULL, NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `services` (`service_name`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Divisão Académica', 'Ed. I', '1º Piso', 'Isabel Sequeira Pinto', NULL, NULL, NULL, NULL, NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `services` (`service_name`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Divisão de Apoio Técnico', NULL, NULL, 'Luís Gaspar', NULL, NULL, NULL, NULL, NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `services` (`service_name`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Divisão de Informática', 'Ed. III', NULL, 'Samuel Neves', 'Divisão de Informática Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'helpdesk@fct.unl.pt', '351 212 947 845', '15353', '351 212 948 548', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `services` (`service_name`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Divisão de Comunicação e Cultura', 'Centro de Excelência do Ambiente', NULL, 'Cristina Groba', 'Divisão de Comunicação e Cultura Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-cc.geral@fct.unl.pt', '351 212 948 300', '15014', '351 212 948 329', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `services` (`service_name`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Divisão de Documentação e Biblioteca', 'Edifício da Biblioteca', NULL, 'José Moura', 'Divisão de Documentação e Biblioteca Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-db.coordenador@fct.unl.pt', '351 212 948 300', '15701', '351 212 948 347', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `services` (`service_name`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES ('Gabinete de Apoio à Direcção', 'Ed. I', NULL, NULL, 'Gabinete de Apoio à Direcção Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'sec-dir@fct.unl.pt', '351 212 948 300', '15001', NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  describe `sections`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (1, 'Secção de Contabilidade', '09:00 - 17:00', 'Ed. I', '1º Piso', 'Anabela Gomes', 'Secção de Contabilidade Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-rf.c@fct.unl.pt', '21 294 83 00', '15806', '351 212 949 672', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.7ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (1, 'Secção de Economato', '09:00 - 17:00', 'Hangar II', NULL, NULL, 'Secção de Economato Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-rf.e@fct.unl.pt', '21 294 78 10', '15818', '351 212 948 331', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (1, 'Secção de Centros e Projectos', '09:00 - 17:00', 'Ed. I', '1º Piso', NULL, 'Secção de Centros e Projectos Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-rf.cp@fct.unl.pt', '21 294 83 00', '15801', '351 212 949 672', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (1, 'Secção de Inventário', '09:00 - 17:00', 'Ed. I', '1º Piso', NULL, 'Secção de Inventário Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-rf.i@fct.unl.pt', '21 294 83 00', '15813', '351 212 949 672', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (1, 'Tesouraria', '09:00 - 17:00', 'Ed. I', 'R/C', NULL, 'Tesouraria Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-rf.t@fct.unl.pt', '351 212 949 655', '15805', '351 212 948 318', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (2, 'Secção de Pessoal', '09:00 - 17:00', 'Ed. I', 'R/C', 'Fátima Pantoja', 'Secção de Pessoal Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'sec-ndoc@fct.unl.pt', '351 212 948 583', '12105', '351 212 948 362', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (2, 'Secção de Vencimentos e Outros Abonos', '09:00 - 17:00', 'Ed. I', 'R/C', 'Laura Nascimento', 'Secção de Vencimentos e Outros Abonos Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-rh.v@fct.unl.pt', '351 212 948 300', '12108', '351 212 948 362', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (2, 'Secção de Expediente Geral', '09:00 - 17:00', 'Ed. I', NULL, 'Fernanda Madeira', 'Secção de Expediente Geral Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-rh.e@fct.unl.pt', '351 212 948 300', '12103', '351 212 954 461', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (3, 'Secção de Graduação', '09:00 - 16:00 Encerra das 12h às 13h durante o mês de Agosto', 'Ed. I', 'R/C', 'Maria Paula Simão', 'Secção de Graduação Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-a.g.helpdesk@fct.unl.pt', '351 212 948 300', '12001', '351 212 948 342', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (3, 'Secção de Pós-Graduação', '09:00 - 16:00 Encerra das 12h às 13h durante o mês de Agosto', 'Ed. I', '1º Piso', 'Elsa Godinho', 'Secção de Pós-Graduação Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-a.pg.helpdesk@fct.unl.pt', '351 212 948 300', '12010', '351 212 948 342', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (3, 'Secção de Apoio ao Estudante', '09:00 - 16:00 Encerra das 12h às 13h durante o mês de Agosto', 'Ed. I', 'R/C', 'Bernardina Gonçalves', 'Secção de Apoio ao Estudante Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-a.ae.mobilidade@fct.unl.pt', '351 212 948 300', '12012 / 12013', '351 212 948 342', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (4, 'Secção de Manutenção e Serviços Gerais', '09:00 - 17:00', 'Centro de Excelência do Ambiente', NULL, 'Filipa Santos', 'Secção de Manutenção e Serviços Gerais Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-at.sg.helpdesk@fct.unl.pt', '351 212 948 300', '13001', '351 212 948 599', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (4, 'Secção de Fiscalização e Espaços Exteriores', '09:00 - 17:00', 'Hangar II', NULL, 'Eduardo Paixão', 'Secção de Fiscalização e Espaços Exteriores Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-at.ee@fct.unl.pt', '351 212 948 300', '15019', NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (4, 'Secção de Segurança e Saúde no Trabalho', '09:00 - 17:00', 'Centro de Excelência do Ambiente', NULL, 'Cláudia Saque', 'Secção de Segurança e Saúde no Trabalho Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-at.s.helpdesk@fct.unl.pt', '351 212 948 300', '15401/2', '351 212 948 577', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (4, 'Secção de Planeamento Físico e Ambiental', '09:00 - 17:00', 'Centro de Excelência do Ambiente', NULL, 'Filipa Santos', 'Secção de Planeamento Físico e Ambiental Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-at.p@fct.unl.pt', '351 212 948 300', '13002', '351 212 948 599', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (5, 'Secção de Apoio aos Utilizadores, Parque Informático e Logística', '9:00 - 17:00', 'Edifício III', NULL, 'Susana Pereira', 'Secção de Apoio aos Utilizadores, Parque Informático e Logística Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'helpdesk@fct.unl.pt', '351 212 948 300', '15353', '351 212 948 548', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (5, 'Secção de Infra-estruturas de Comunicação, Sistemas, Qualidade e Segurança', '09:00 - 17:00', 'Edifício III', NULL, 'Samuel Neves', 'Secção de Infra-estruturas de Comunicação, Sistemas, Qualidade e Segurança Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'helpdesk@fct.unl.pt', '351 212 948 300', '15353', '351 212 948 548', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.3ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (5, 'Secção de Sistemas de Informação', '09:00 - 17:00', 'Edifício III', NULL, 'Samuel Neves', 'Secção de Sistemas de Informação Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'helpdesk@fct.unl.pt', '351 212 948 300', '15353', '351 212 948 548', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (6, 'Secção de Difusão de Informação, Cultura e Eventos', '09:00 - 17:00', 'Centro de Excelência do Ambiente', NULL, 'Carla Marina Marques', 'Secção de Difusão de Informação, Cultura e Eventos Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-cc.geral@fct.unl.pt', '351 212 948 300', '15014', '351 212 948 329', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (6, 'Secção de Comunicação e Imagem', '09:00 - 17:00', 'Centro de Excelência do Ambient', NULL, 'Sónia Mariano', 'Secção de Comunicação e Imagem Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-cc.design@fct.unl.pt', '351 212 948 300', '15010/15/29', '351 212 948 329', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (7, 'Secção Administrativa', '09:00 - 17:00', 'Edifício da Biblioteca', NULL, 'Sílvia Reis', 'Secção Administrativa Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-db.helpdesk@fct.unl.pt', '351 212 948 300', '15701', '351 212 948 347', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (7, 'Secção de Apoio ao Utilizador', '09:00 - 17:00', 'Edifício da Biblioteca', NULL, 'Maria do Rosário Duarte', 'Secção de Apoio ao Utilizador Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-db.helpdesk@fct.unl.pt', '351 212 948 300', '15701', '351 212 948 347', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (70.8ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (7, 'Secção de Gestão de Sistemas de Informação', '09:00 - 17:00', 'Edifício da Biblioteca', NULL, 'Salima Rehemtula', 'Secção de Gestão de Sistemas de Informação Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'div-db.helpdesk@fct.unl.pt', '351 212 948 300', '15701', '351 212 948 347', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.8ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (8, 'Unidade de Apoio à Execução Pedagógica e Formação Contínua', '09:00 - 17:00', 'Ed. I', NULL, 'Jorge Lampreia', 'Unidade de Apoio à Execução Pedagógica e Formação Contínua Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'gab-ad.a@fct.unl.pt', '21 294 85 44', '15201', '21 294 96 57', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (8, 'Unidade de Gestão da Qualidade', '09:00 - 17:00', 'Ed. I', NULL, 'Zulema Pereira', 'Unidade de Gestão da Qualidade Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'gab-ad.qualidade@fct.unl.pt', '351 212 948 300', '15024', '351 212 949 622', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (8, 'Unidade de Assessoria Jurídica', '09:00 - 17:00', 'Ed. I', NULL, 'Luís Gaspar', 'Unidade de Assessoria Jurídica Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'gab-ad.aj@fct.unl.pt', '351 212 948 300', '15020', '351 212 948 311', '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (8, 'Unidade de Contratos', '09:00 - 17:00', 'Ed. I', NULL, 'Luís Gaspar', 'Unidade de Contratos Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'gab-ad.c@fct.unl.pt', '351 212 948 300', '15005', '351 212 948 311', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (8, 'Unidade de Apoio a Projectos e Relações Exteriores', '09:00 - 17:00', 'Biblioteca', NULL, 'Susana Barreiros', 'Unidade de Apoio a Projectos e Relações Exteriores Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'gab-ad.formar@fct.unl.pt', '351 212 947 897', '15023', NULL, '2011-05-30 13:20:25', '2011-05-30 13:20:25')
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `sections` (`service_id`, `section_name`, `schedule`, `building`, `space`, `coordenator`, `mail`, `email`, `telephone`, `extension`, `fax`, `created_at`, `updated_at`) VALUES (8, 'Unidade de Promoção do Empreendedorismo e Transferência de Tecnologia', '09:00 - 17:00', 'Biblioteca', NULL, 'Susana Barreiros', 'Unidade de Promoção do Empreendedorismo e Transferência de Tecnologia Faculdade de Ciências e Tecnologia 2829-516 Caparica Portugal', 'gab-ad.tto@fct.unl.pt', '351 212 947 897', '15034', '', '2011-05-30 13:20:25', '2011-05-30 13:20:25')[0m
+  [1m[35mSQL (0.3ms)[0m  COMMIT
+
+
+Started GET "/metainfo" for 127.0.0.1 at 2011-06-02 15:22:06 +0100
+  Processing by OrgUnitsController#meta_info as XML
+Rendered org_units/meta_info.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 15:22:49 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (21.5ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 15:23:09 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mDepartment Load (0.5ms)[0m  [1mSELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0[0m
+Rendered departments/list.xml.builder (98.2ms)
+Completed 200 OK in 139ms (Views: 100.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 15:23:15 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 15:24:59 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/services?start=1&end=7" for 127.0.0.1 at 2011-06-02 15:25:01 +0100
+  Processing by ServicesController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mService Load (0.4ms)[0m  SELECT `services`.* FROM `services` ORDER BY service_name LIMIT 7 OFFSET 0
+Rendered services/list.xml.builder (14.9ms)
+Completed 200 OK in 23ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 15:25:19 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 15:56:27 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 15:56:41 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 16:00:22 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 16:02:16 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 16:02:32 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 16:03:31 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 16:03:33 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0[0m
+Rendered departments/list.xml.builder (26.8ms)
+Completed 200 OK in 66ms (Views: 29.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 18:51:17 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 18:52:05 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 18:52:10 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mDepartment Load (0.5ms)[0m  [1mSELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0[0m
+Rendered departments/list.xml.builder (45.8ms)
+Completed 200 OK in 86ms (Views: 48.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:52:11 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.0ms)
+Completed 200 OK in 17ms (Views: 9.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 18:52:33 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 18:52:34 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (9.1ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:52:35 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.1ms)
+Completed 200 OK in 18ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 18:52:42 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 18:52:43 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (7.9ms)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:53:14 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (33.7ms)
+Completed 200 OK in 43ms (Views: 36.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 18:54:27 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 18:54:28 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (7.8ms)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:54:30 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (6.8ms)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 18:54:44 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 18:54:45 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (7.9ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:31 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (6.8ms)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 18:55:37 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 18:55:39 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (8.5ms)
+Completed 200 OK in 18ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:44 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (6.7ms)
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:47 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1
+Rendered departments/specific.xml.builder (7.1ms)
+Completed 200 OK in 44ms (Views: 36.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:53 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (6.8ms)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:54 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1
+Rendered departments/specific.xml.builder (7.2ms)
+Completed 200 OK in 16ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:54 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.9ms)
+Completed 200 OK in 45ms (Views: 10.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:54 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1
+Rendered departments/specific.xml.builder (7.6ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:55 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.9ms)
+Completed 200 OK in 18ms (Views: 10.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:55 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1
+Rendered departments/specific.xml.builder (7.3ms)
+Completed 200 OK in 47ms (Views: 9.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:55:57 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.7ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-02 18:57:56 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-02 18:57:57 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (32.9ms)
+Completed 200 OK in 41ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-02 18:57:58 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.0ms)
+Completed 200 OK in 16ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/search?keyword=joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:16:01 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.4ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%joao%') ORDER BY organ_name
+  [1m[36mService Load (0.4ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (20.9ms)
+Completed 200 OK in 96ms (Views: 23.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/search?keyword=Artur+Jo%C3%A3o&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:16:13 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Artur João", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.3ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%Artur João%') ORDER BY department_name
+  [1m[36mOrgan Load (0.4ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%Artur João%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%Artur João%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 23ms (Views: 4.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/search?keyword=Artur+Jo%C3%A3o&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:18:47 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Artur João", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Artur João%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Artur João%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Artur João%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.3ms)
+Completed 200 OK in 22ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=Artur+Jo%C3%A3o&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:19:07 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Artur João", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%Artur João%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%Artur João%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%Artur João%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=Artur+Jo%C3%A3o&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:19:27 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Artur João", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Artur João%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Artur João%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Artur João%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 22ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=Artur+Jo%C3%A3o&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:22:32 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Artur João", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%Artur João%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%Artur João%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%Artur João%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.1ms)
+Completed 200 OK in 21ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=Artur+Jo%C3%A3o&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:23:24 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Artur João", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Artur João%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Artur João%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Artur João%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 21ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=Artur+Jo%C3%A3o&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:23:51 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Artur João", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%Artur João%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%Artur João%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%Artur João%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=Artur+Jo%C3%A3o&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:24:48 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Artur João", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Artur João%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Artur João%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Artur João%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 21ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=joao+artur&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:25:27 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"joao artur", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.3ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%joao artur%') ORDER BY department_name
+  [1m[36mOrgan Load (0.3ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%joao artur%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%joao artur%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 23ms (Views: 4.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:26:02 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.4ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.1ms)
+Completed 200 OK in 48ms (Views: 4.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:48:34 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 21ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:54:46 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 16:58:43 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.2ms)
+Completed 200 OK in 21ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 17:41:20 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 17:45:06 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.1ms)
+Completed 200 OK in 49ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 17:46:36 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 17:46:43 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 17:48:23 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.2ms)
+Completed 200 OK in 21ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 17:51:45 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.2ms)
+Completed 200 OK in 20ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 17:54:04 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 21ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:03:30 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.1ms)
+Completed 200 OK in 22ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:08:26 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:08:28 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.2ms)
+Completed 200 OK in 49ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:08:30 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 21ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:08:31 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (1.9ms)
+Completed 200 OK in 22ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:08:43 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.1ms)
+Completed 200 OK in 48ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:08:44 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (1.9ms)
+Completed 200 OK in 20ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:09:07 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=joao+artur&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:11:00 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"joao artur", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%joao artur%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%joao artur%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%joao artur%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.1ms)
+Completed 200 OK in 23ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:11:11 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (1.9ms)
+Completed 200 OK in 22ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:12:24 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:15:22 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 21ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=joao+artur&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:16:35 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"joao artur", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%joao artur%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%joao artur%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%joao artur%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.2ms)
+Completed 200 OK in 22ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:16:39 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:34:10 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.2ms)
+Completed 200 OK in 21ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:35:49 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:39:22 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.3ms)
+Completed 200 OK in 48ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:40:31 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (1.9ms)
+Completed 200 OK in 20ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:40:39 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:41:47 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.4ms)
+Completed 200 OK in 24ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:42:10 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (1.9ms)
+Completed 200 OK in 20ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:43:05 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.0ms)
+Completed 200 OK in 20ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people/73" for 127.0.0.1 at 2011-06-06 18:43:05 +0100
+
+ActionController::RoutingError (No route matches "/people/73"):
+  
+
+Rendered /home/jphorta/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/people/73" for 127.0.0.1 at 2011-06-06 18:43:28 +0100
+
+ActionController::RoutingError (No route matches "/people/73"):
+  
+
+Rendered /home/jphorta/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/people/73" for 127.0.0.1 at 2011-06-06 18:44:00 +0100
+
+ActionController::RoutingError (No route matches "/people/73"):
+  
+
+Rendered /home/jphorta/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/search?keyword=artur+joao&start=1&end=5000" for 127.0.0.1 at 2011-06-06 18:47:09 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"artur joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%artur joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%artur joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%artur joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.1ms)
+Completed 200 OK in 21ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=Departamento+de+Qu%C3%ADmica&start=1&end=5000" for 127.0.0.1 at 2011-06-06 19:15:14 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Química", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Química%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.3ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Química%') ORDER BY organ_name
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Química%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (8.3ms)
+Completed 200 OK in 27ms (Views: 10.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-06 19:15:34 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-06 19:15:58 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.5ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (8.1ms)
+Completed 200 OK in 18ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-06 19:16:00 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mSQL (30.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1
+Rendered departments/specific.xml.builder (7.2ms)
+Completed 200 OK in 47ms (Views: 9.6ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/organs?start=1&end=7" for 127.0.0.1 at 2011-06-06 19:16:11 +0100
+  Processing by OrgansController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mOrgan Load (0.4ms)[0m  [1mSELECT `organs`.* FROM `organs` ORDER BY organ_name LIMIT 7 OFFSET 0[0m
+Rendered organs/list.xml.builder (16.0ms)
+Completed 200 OK in 33ms (Views: 26.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/organs/7" for 127.0.0.1 at 2011-06-06 19:16:12 +0100
+  Processing by OrgansController#specific as XML
+  Parameters: {"id"=>"7"}
+  [1m[35mOrgan Load (0.2ms)[0m  SELECT `organs`.* FROM `organs` WHERE `organs`.`id` = 7 LIMIT 1
+  [1m[36mSecretary Load (0.3ms)[0m  [1mSELECT `secretaries`.* FROM `secretaries` WHERE `secretaries`.`organ_id` = 7[0m
+Rendered organs/specific.xml.builder (3.5ms)
+Completed 200 OK in 46ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/services?start=1&end=7" for 127.0.0.1 at 2011-06-06 19:16:29 +0100
+  Processing by ServicesController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mService Load (0.4ms)[0m  SELECT `services`.* FROM `services` ORDER BY service_name LIMIT 7 OFFSET 0
+Rendered services/list.xml.builder (10.9ms)
+Completed 200 OK in 80ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/services/4" for 127.0.0.1 at 2011-06-06 19:16:32 +0100
+  Processing by ServicesController#specific as XML
+  Parameters: {"id"=>"4"}
+  [1m[36mService Load (0.2ms)[0m  [1mSELECT `services`.* FROM `services` WHERE `services`.`id` = 4 LIMIT 1[0m
+  [1m[35mSection Load (0.5ms)[0m  SELECT `sections`.* FROM `sections` WHERE `sections`.`service_id` = 4
+Rendered services/specific.xml.builder (13.2ms)
+Completed 200 OK in 36ms (Views: 15.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sections/12" for 127.0.0.1 at 2011-06-06 19:16:34 +0100
+  Processing by SectionsController#specific as XML
+  Parameters: {"id"=>"12"}
+  [1m[36mSection Load (0.3ms)[0m  [1mSELECT `sections`.* FROM `sections` WHERE `sections`.`id` = 12 LIMIT 1[0m
+Rendered sections/specific.xml.builder (12.2ms)
+Completed 200 OK in 22ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/services/14" for 127.0.0.1 at 2011-06-06 19:17:38 +0100
+  Processing by ServicesController#specific as XML
+  Parameters: {"id"=>"14"}
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`id` = 14 LIMIT 1
+  [1m[36mSection Load (0.5ms)[0m  [1mSELECT `sections`.* FROM `sections` WHERE `sections`.`service_id` = 14[0m
+Rendered services/specific.xml.builder (3.6ms)
+Completed 200 OK in 27ms (Views: 5.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/search?keyword=Departamento+de+Qu%C3%ADmica&start=1&end=5000" for 127.0.0.1 at 2011-06-06 19:18:19 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Química", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Química%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Química%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Química%') ORDER BY service_name
+Rendered org_units/search.xml.builder (7.4ms)
+Completed 200 OK in 29ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/10" for 127.0.0.1 at 2011-06-06 19:18:27 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"10"}
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 10 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.0ms)
+Completed 200 OK in 16ms (Views: 9.3ms | ActiveRecord: 0.2ms)
