@@ -1,8 +1,13 @@
-xml.record(:title => "Organs") do
+xml.record(:title => "Organ") do
   xml.text(@organs.organ_name, :title => "Name")
-  xml.text(:title => "Office Location") do
-    xml.entity(@organs.building, :kind => "building")
-    xml.entity(@organs.space, :kind => "room")
+  @location = @organs.building
+  @kind = "building"
+  if @organs.space != nil then
+      @location = @location+" "+@organs.space
+    @kind = "room"
+  end
+  if @location != nil then
+  xml.entity(@location, :title => "Office Location", :kind => @kind)
   end
   if @organs.president != nil then
     xml.entity(@organs.president, :title => "President", :kind => "person")

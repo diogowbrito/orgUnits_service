@@ -1,11 +1,14 @@
-xml.record(:title => "Sections") do
+xml.record(:title => "Section") do
   xml.text(@sections.section_name, :title => "Name")
   xml.text(@sections.schedule, :title => "Schedule")
-  xml.text(:title => "Office Location") do
-    xml.entity(@sections.building, :kind => "building")
-    if @sections.space != nil then
-      xml.entity(@sections.space, :kind => "room")
-    end
+  @location = @sections.building
+  @kind = "building"
+  if @sections.space != nil then
+      @location = @location+" "+@sections.space
+    @kind = "room"
+  end
+  if @location != nil then
+  xml.entity(@location, :title => "Office Location", :kind => @kind)
   end
   if @sections.coordenator != nil then
     xml.text(@sections.coordenator, :title => "Coordenator")

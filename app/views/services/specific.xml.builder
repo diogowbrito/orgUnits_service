@@ -1,10 +1,13 @@
-xml.record(:title => "Services") do
+xml.record(:title => "Service") do
   xml.text(@services.service_name, :title => "Name")
-  xml.text(:title => "Office Location") do
-    xml.entity(@services.building, :kind => "building")
-    if @services.space != nil then
-      xml.entity(@services.space, :kind => "room")
-    end
+  @location = @services.building
+  @kind = "building"
+  if @services.space != nil then
+      @location = @location+" "+@services.space
+    @kind = "room"
+  end
+  if @location != nil then
+  xml.entity(@location, :title => "Office Location", :kind => @kind)
   end
   if @services.coordenator != nil then
     xml.text(@services.coordenator, :title => "Coordenator")
