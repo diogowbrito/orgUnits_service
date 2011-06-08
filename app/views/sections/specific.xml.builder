@@ -1,6 +1,6 @@
-xml.record(:title => "Section") do
-  xml.text(@sections.section_name, :title => "Name")
-  xml.text(@sections.schedule, :title => "Schedule")
+xml.record(:title => "Secção") do
+  xml.text(@sections.section_name, :title => "Nome")
+  xml.text(@sections.schedule, :title => "Horário")
   @location = @sections.building
   @kind = "building"
   if @sections.space != nil then
@@ -8,15 +8,15 @@ xml.record(:title => "Section") do
     @kind = "room"
   end
   if @location != nil then
-  xml.entity(@location, :title => "Office Location", :kind => @kind)
+  xml.entity(@location, :title => "Localização do Gabinete", :kind => @kind)
   end
   if @sections.coordenator != nil then
-    xml.text(@sections.coordenator, :title => "Coordenator")
+    xml.text(@sections.coordenator, :title => "Coordenador")
   end
-  xml.text(@sections.mail, :title => "Mail")
-  xml.email(@sections.email)
-  xml.text(@sections.telephone, :title => "Telephone")
-  xml.text(@sections.extension, :title => "Extension")
+  xml.text(@sections.mail, :title => "Correio")
+  xml.email(@sections.email, :title => "Email")
+  xml.text(@sections.telephone, :title => "Telefone")
+  xml.text(@sections.extension, :title => "Extensão")
   if @sections.fax != nil then
     xml.text(@sections.fax, :title => "Fax")
   end
