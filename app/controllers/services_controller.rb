@@ -2,11 +2,19 @@ class ServicesController < ApplicationController
 
   def list
     @address = get_address
-    @start = params[:start] || '1'
-    @end = params[:end] || '7'
-    @next = @end.to_i+1
+    @start = (params[:start] || '1').to_i
+    @end = (params[:end] || '7').to_i
+    @next = @address+"/services?start="+(@end+1).to_s+"&end="+(@end+1+@end-@start).to_s
 
     @services = Service.find(:all, :order => "service_name", :offset => @start.to_i-1, :limit => @end.to_i+1-@start.to_i)
+
+     if @services.count != @end+1-@start then
+      @next = ""
+    else
+      if @services[@end-@start].service_name == Service.order(:service_name).last.service_name
+        @next = ""
+      end
+    end
 
     respond_to :xml
   end
