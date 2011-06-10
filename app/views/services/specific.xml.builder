@@ -1,25 +1,28 @@
-xml.record(:title => "Services") do
-  xml.text(@services.service_name, :title => "Name")
-  xml.text(:title => "Office Location") do
-    xml.entity(@services.building, :kind => "building")
-    if @services.space != nil then
-      xml.entity(@services.space, :kind => "room")
-    end
+xml.record(:title => "Serviço") do
+  xml.text(@services.service_name, :title => "Nome")
+  @location = @services.building
+  @kind = "building"
+  if @services.space != nil then
+      @location = @location+" "+@services.space
+    @kind = "room"
+  end
+  if @location != nil then
+  xml.entity(@location, :title => "Localização do Gabinete", :kind => @kind)
   end
   if @services.coordenator != nil then
-    xml.text(@services.coordenator, :title => "Coordenator")
+    xml.text(@services.coordenator, :title => "Coordenador")
   end
   if @services.mail != nil then
-    xml.text(@services.mail, :title => "Mail")
+    xml.text(@services.mail, :title => "Correio")
   end
   if @services.email != nil then
-    xml.email(@services.email)
+    xml.email(@services.email, :title => "Email")
   end
   if @services.telephone != nil then
-    xml.text(@services.telephone, :title => "Telephone")
+    xml.text(@services.telephone, :title => "Telefone")
   end
   if @services.extension != nil then
-    xml.text(@services.extension, :title => "Extension")
+    xml.text(@services.extension, :title => "Extensão")
   end
   if @services.fax != nil then
     xml.text(@services.fax, :title => "Fax")
