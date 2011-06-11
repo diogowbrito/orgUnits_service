@@ -2661,3 +2661,66 @@ Started GET "/search?keyword=joao&start=1&end=5000" for 127.0.0.1 at 2011-06-08 
   [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%joao%') ORDER BY service_name[0m
 Rendered org_units/search.xml.builder (2.2ms)
 Completed 200 OK in 21ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-11 00:14:12 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.7ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=10" for 127.0.0.1 at 2011-06-11 00:14:14 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"10"}
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 10 OFFSET 0[0m
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name DESC LIMIT 1
+Rendered departments/list.xml.builder (35.5ms)
+Completed 200 OK in 112ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/departments?start=11&end=20" for 127.0.0.1 at 2011-06-11 00:14:15 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"11", "end"=>"20"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 10 OFFSET 10[0m
+Rendered departments/list.xml.builder (53.8ms)
+Completed 200 OK in 66ms (Views: 57.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/search?keyword=a&start=1&end=5000" for 127.0.0.1 at 2011-06-11 01:02:18 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"a", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.6ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%a%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.4ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%a%') ORDER BY organ_name
+  [1m[36mService Load (0.5ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%a%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (76.8ms)
+Completed 200 OK in 186ms (Views: 80.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/search?keyword=ola&start=1&end=5000" for 127.0.0.1 at 2011-06-11 01:03:14 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"ola", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.4ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%ola%') ORDER BY department_name
+  [1m[36mOrgan Load (0.4ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%ola%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.4ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%ola%') ORDER BY service_name
+Rendered org_units/search.xml.builder (3.7ms)
+Completed 200 OK in 32ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/search?keyword=ola&start=1&end=5000" for 127.0.0.1 at 2011-06-11 01:03:32 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"ola", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%ola%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%ola%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%ola%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (3.4ms)
+Completed 200 OK in 30ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=p&start=1&end=5000" for 127.0.0.1 at 2011-06-11 01:14:30 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"p", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.6ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%p%') ORDER BY department_name
+  [1m[36mOrgan Load (0.5ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%p%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.5ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%p%') ORDER BY service_name
+Rendered org_units/search.xml.builder (43.9ms)
+Completed 200 OK in 105ms (Views: 47.7ms | ActiveRecord: 1.5ms)
