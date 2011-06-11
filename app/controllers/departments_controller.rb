@@ -2,11 +2,19 @@ class DepartmentsController < ApplicationController
 
   def list
     @address = get_address
-    @start = params[:start] || '1'
-    @end = params[:end] || '7'
-    @next = @end.to_i+1
+    @start = (params[:start] || '1').to_i
+    @end = (params[:end] || '7').to_i
+    @next = @address+"/departments?start="+(@end+1).to_s+"&end="+(@end+1+@end-@start).to_s
 
     @departments = Department.find(:all, :order => "department_name", :offset => @start.to_i-1, :limit => @end.to_i+1-@start.to_i)
+
+    if @departments.count != @end+1-@start then
+      @next = ""
+    else
+      if @departments[@end-@start].department_name == Department.order(:department_name).last.department_name
+        @next = ""
+      end
+    end
 
     respond_to :xml
   end

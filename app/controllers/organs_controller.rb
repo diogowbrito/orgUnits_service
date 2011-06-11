@@ -2,12 +2,19 @@ class OrgansController < ApplicationController
 
   def list
     @address = get_address
-    @start = params[:start] || '1'
-    @end = params[:end] || '5'
-    @next = @end.to_i+1
+    @start = (params[:start] || '1').to_i
+    @end = (params[:end] || '5').to_i
+    @next = @address+"/organs?start="+(@end+1).to_s+"&end="+(@end+1+@end-@start).to_s
 
-    @organs = Organ.find(:all, :order => "organ_name", :offset => @start.to_i-1, :limit => @end.to_i+1-@start.to_i)
+    @organs = Organ.find(:all, :order => "organ_name", :offset => @start-1, :limit => @end+1-@start)
 
+     if @organs.count != @end+1-@start then
+      @next = ""
+    else
+      if @organs[@end-@start].organ_name == Organ.order(:organ_name).last.organ_name
+        @next = ""
+      end
+     end
     respond_to :xml
   end
 
