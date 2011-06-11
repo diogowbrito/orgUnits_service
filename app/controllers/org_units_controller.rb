@@ -17,9 +17,9 @@ class OrgUnitsController < ApplicationController
   def search
     @address = get_address
     @keyword = params[:keyword].gsub("%", "\%").gsub("_", "\_")
-    @start = params[:start] || '1'
-    @end = params[:end] || '20'
-    @next = @end.to_i+1
+    @start = (params[:start] || '1').to_i
+    @end = (params[:end] || '10').to_i
+    @next = @address + "/search?keyword=" + @keyword + "&start=" + (@end+1).to_s + "&end=" + (@end+1+@end-@start).to_s
 
     departments = Department.find(:all, :order=> "department_name", :conditions=> ["department_name like ?", "%"+@keyword+"%"])
     organs = Organ.find(:all, :order=> "organ_name", :conditions=> ["organ_name like ?", "%"+@keyword+"%"])
@@ -52,7 +52,7 @@ class OrgUnitsController < ApplicationController
       counter = counter+1
     end
 
-    if @list.count+@list1.count+@list2.count != 20 then
+    if @list.count+@list1.count+@list2.count != 10 then
       @next = ""
     end
 
