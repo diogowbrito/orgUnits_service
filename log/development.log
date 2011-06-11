@@ -2661,3 +2661,481 @@ Started GET "/search?keyword=joao&start=1&end=5000" for 127.0.0.1 at 2011-06-08 
   [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%joao%') ORDER BY service_name[0m
 Rendered org_units/search.xml.builder (2.2ms)
 Completed 200 OK in 21ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 00:01:00 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.6ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/metainfo" for 127.0.0.1 at 2011-06-09 14:00:22 +0100
+  Processing by OrgUnitsController#meta_info as XML
+Rendered org_units/meta_info.xml (0.5ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 14:01:12 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-09 14:01:14 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1mSELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0[0m
+Rendered departments/list.xml.builder (61.4ms)
+Completed 200 OK in 101ms (Views: 63.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/13" for 127.0.0.1 at 2011-06-09 14:01:15 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"13"}
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 13 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.1ms)
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/search?keyword=Departamento+de+Engenharia+Electrot%C3%A9cnica&start=1&end=5000" for 127.0.0.1 at 2011-06-09 14:08:08 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Engenharia Electrotécnica", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.4ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY department_name
+  [1m[36mOrgan Load (0.3ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY service_name
+Rendered org_units/search.xml.builder (31.1ms)
+Completed 200 OK in 51ms (Views: 33.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/departments/7" for 127.0.0.1 at 2011-06-09 14:08:08 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"7"}
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 7 LIMIT 1[0m
+Rendered departments/specific.xml.builder (6.9ms)
+Completed 200 OK in 16ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 14:09:42 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-09 14:09:44 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (9.7ms)
+Completed 200 OK in 18ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-09 14:09:51 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.0ms)
+Completed 200 OK in 16ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 14:10:18 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-09 14:10:20 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0
+Rendered departments/list.xml.builder (7.9ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-09 14:10:22 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.8ms)
+Completed 200 OK in 17ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 15:53:58 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 15:54:57 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?keyword=Departamento+de+Engenharia+Electrot%C3%A9cnica&start=1&end=5000" for 127.0.0.1 at 2011-06-09 16:00:31 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Engenharia Electrotécnica", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY service_name
+Rendered org_units/search.xml.builder (11.4ms)
+Completed 200 OK in 36ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/departments/7" for 127.0.0.1 at 2011-06-09 16:00:31 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"7"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 7 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.7ms)
+Completed 200 OK in 17ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 16:00:38 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 16:00:40 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/organs?start=1&end=7" for 127.0.0.1 at 2011-06-09 16:00:41 +0100
+  Processing by OrgansController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[35mOrgan Load (0.4ms)[0m  SELECT `organs`.* FROM `organs` ORDER BY organ_name LIMIT 7 OFFSET 0
+Rendered organs/list.xml.builder (11.1ms)
+Completed 200 OK in 33ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/organs/4" for 127.0.0.1 at 2011-06-09 16:00:42 +0100
+  Processing by OrgansController#specific as XML
+  Parameters: {"id"=>"4"}
+  [1m[36mOrgan Load (0.2ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE `organs`.`id` = 4 LIMIT 1[0m
+  [1m[35mSecretary Load (0.3ms)[0m  SELECT `secretaries`.* FROM `secretaries` WHERE `secretaries`.`organ_id` = 4
+Rendered organs/specific.xml.builder (3.5ms)
+Completed 200 OK in 88ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 16:03:45 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/organs?start=1&end=7" for 127.0.0.1 at 2011-06-09 16:03:46 +0100
+  Processing by OrgansController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` ORDER BY organ_name LIMIT 7 OFFSET 0[0m
+Rendered organs/list.xml.builder (10.4ms)
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/organs/4" for 127.0.0.1 at 2011-06-09 16:03:51 +0100
+  Processing by OrgansController#specific as XML
+  Parameters: {"id"=>"4"}
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE `organs`.`id` = 4 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `secretaries` WHERE `secretaries`.`organ_id` = 4[0m
+Rendered organs/specific.xml.builder (4.6ms)
+Completed 200 OK in 27ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/organs/1" for 127.0.0.1 at 2011-06-09 16:03:55 +0100
+  Processing by OrgansController#specific as XML
+  Parameters: {"id"=>"1"}
+  [1m[35mOrgan Load (0.2ms)[0m  SELECT `organs`.* FROM `organs` WHERE `organs`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM `secretaries` WHERE `secretaries`.`organ_id` = 1[0m
+  [1m[35mSecretary Load (0.4ms)[0m  SELECT `secretaries`.* FROM `secretaries` WHERE `secretaries`.`organ_id` = 1
+Rendered organs/specific.xml.builder (11.2ms)
+Completed 200 OK in 34ms (Views: 12.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/organs/6" for 127.0.0.1 at 2011-06-09 16:04:03 +0100
+  Processing by OrgansController#specific as XML
+  Parameters: {"id"=>"6"}
+  [1m[36mOrgan Load (0.3ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE `organs`.`id` = 6 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `secretaries` WHERE `secretaries`.`organ_id` = 6
+  [1m[36mSecretary Load (0.2ms)[0m  [1mSELECT `secretaries`.* FROM `secretaries` WHERE `secretaries`.`organ_id` = 6[0m
+Rendered organs/specific.xml.builder (8.5ms)
+Completed 200 OK in 32ms (Views: 10.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/organs/2" for 127.0.0.1 at 2011-06-09 16:04:07 +0100
+  Processing by OrgansController#specific as XML
+  Parameters: {"id"=>"2"}
+  [1m[35mOrgan Load (0.2ms)[0m  SELECT `organs`.* FROM `organs` WHERE `organs`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `secretaries` WHERE `secretaries`.`organ_id` = 2[0m
+  [1m[35mSecretary Load (0.1ms)[0m  SELECT `secretaries`.* FROM `secretaries` WHERE `secretaries`.`organ_id` = 2
+Rendered organs/specific.xml.builder (9.3ms)
+Completed 200 OK in 33ms (Views: 11.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 16:20:59 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 16:47:20 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/organs?start=1&end=7" for 127.0.0.1 at 2011-06-09 16:47:22 +0100
+  Processing by OrgansController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` ORDER BY organ_name LIMIT 7 OFFSET 0[0m
+Rendered organs/list.xml.builder (10.6ms)
+Completed 200 OK in 19ms (Views: 12.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/organs/5" for 127.0.0.1 at 2011-06-09 16:47:24 +0100
+  Processing by OrgansController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mOrgan Load (0.2ms)[0m  SELECT `organs`.* FROM `organs` WHERE `organs`.`id` = 5 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `secretaries` WHERE `secretaries`.`organ_id` = 5[0m
+  [1m[35mSecretary Load (0.2ms)[0m  SELECT `secretaries`.* FROM `secretaries` WHERE `secretaries`.`organ_id` = 5
+Rendered organs/specific.xml.builder (8.5ms)
+Completed 200 OK in 31ms (Views: 10.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-09 16:48:43 +0100
+  Processing by OrgUnitsController#description as XML
+Rendered org_units/description.xml (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments?start=1&end=7" for 127.0.0.1 at 2011-06-09 16:48:44 +0100
+  Processing by DepartmentsController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` ORDER BY department_name LIMIT 7 OFFSET 0[0m
+Rendered departments/list.xml.builder (33.2ms)
+Completed 200 OK in 42ms (Views: 35.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/13" for 127.0.0.1 at 2011-06-09 16:48:45 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"13"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 13 LIMIT 1
+Rendered departments/specific.xml.builder (8.6ms)
+Completed 200 OK in 20ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/services?start=1&end=7" for 127.0.0.1 at 2011-06-09 16:48:49 +0100
+  Processing by ServicesController#list as XML
+  Parameters: {"start"=>"1", "end"=>"7"}
+  [1m[36mService Load (0.4ms)[0m  [1mSELECT `services`.* FROM `services` ORDER BY service_name LIMIT 7 OFFSET 0[0m
+Rendered services/list.xml.builder (10.2ms)
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/services/7" for 127.0.0.1 at 2011-06-09 16:48:50 +0100
+  Processing by ServicesController#specific as XML
+  Parameters: {"id"=>"7"}
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`id` = 7 LIMIT 1
+  [1m[36mSection Load (0.4ms)[0m  [1mSELECT `sections`.* FROM `sections` WHERE `sections`.`service_id` = 7[0m
+Rendered services/specific.xml.builder (12.6ms)
+Completed 200 OK in 52ms (Views: 14.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/services/4" for 127.0.0.1 at 2011-06-09 16:49:02 +0100
+  Processing by ServicesController#specific as XML
+  Parameters: {"id"=>"4"}
+  [1m[35mService Load (0.2ms)[0m  SELECT `services`.* FROM `services` WHERE `services`.`id` = 4 LIMIT 1
+  [1m[36mSection Load (0.4ms)[0m  [1mSELECT `sections`.* FROM `sections` WHERE `sections`.`service_id` = 4[0m
+Rendered services/specific.xml.builder (38.6ms)
+Completed 200 OK in 61ms (Views: 40.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/search?keyword=joao&start=1&end=5000" for 127.0.0.1 at 2011-06-09 17:26:31 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.3ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.3ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.8ms)
+Completed 200 OK in 25ms (Views: 5.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/search?keyword=Departamento+de+Ci%C3%AAncias+da+Terra&start=1&end=5000" for 127.0.0.1 at 2011-06-09 17:39:23 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Ciências da Terra", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Ciências da Terra%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.3ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Ciências da Terra%') ORDER BY organ_name
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Ciências da Terra%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (8.1ms)
+Completed 200 OK in 28ms (Views: 11.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-09 17:39:23 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1
+Rendered departments/specific.xml.builder (7.1ms)
+Completed 200 OK in 19ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/search?keyword=Departamento+de+Ci%C3%AAncias+da+Terra&start=1&end=5000" for 127.0.0.1 at 2011-06-09 17:39:57 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Ciências da Terra", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Ciências da Terra%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Ciências da Terra%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Ciências da Terra%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (7.6ms)
+Completed 200 OK in 30ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-09 17:39:57 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1
+Rendered departments/specific.xml.builder (7.4ms)
+Completed 200 OK in 46ms (Views: 9.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-09 17:40:06 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.5ms)
+Completed 200 OK in 17ms (Views: 9.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/search?keyword=Departamento+de+Qu%C3%ADmica&start=1&end=5000" for 127.0.0.1 at 2011-06-09 17:58:05 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Química", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.4ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Química%') ORDER BY department_name
+  [1m[36mOrgan Load (0.3ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Química%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.3ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Química%') ORDER BY service_name
+Rendered org_units/search.xml.builder (7.4ms)
+Completed 200 OK in 29ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/departments/10" for 127.0.0.1 at 2011-06-09 17:58:05 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"10"}
+  [1m[36mDepartment Load (0.2ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 10 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.1ms)
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/departments/5" for 127.0.0.1 at 2011-06-09 18:00:23 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 5 LIMIT 1
+Rendered departments/specific.xml.builder (8.0ms)
+Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/search?keyword=Grupo+de+Disciplinas+de+Ecologia+da+Hidrosfera&start=1&end=5000" for 127.0.0.1 at 2011-06-09 18:06:36 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Grupo de Disciplinas de Ecologia da Hidrosfera", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Grupo de Disciplinas de Ecologia da Hidrosfera%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.3ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Grupo de Disciplinas de Ecologia da Hidrosfera%') ORDER BY organ_name
+  [1m[36mService Load (0.9ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Grupo de Disciplinas de Ecologia da Hidrosfera%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (2.4ms)
+Completed 200 OK in 50ms (Views: 4.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/search?keyword=joao&start=1&end=5000" for 127.0.0.1 at 2011-06-09 18:09:31 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"joao", "start"=>"1", "end"=>"5000"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE (department_name like '%joao%') ORDER BY department_name
+  [1m[36mOrgan Load (0.1ms)[0m  [1mSELECT `organs`.* FROM `organs` WHERE (organ_name like '%joao%') ORDER BY organ_name[0m
+  [1m[35mService Load (0.1ms)[0m  SELECT `services`.* FROM `services` WHERE (service_name like '%joao%') ORDER BY service_name
+Rendered org_units/search.xml.builder (2.1ms)
+Completed 200 OK in 20ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=Departamento+de+Inform%C3%A1tica&start=1&end=5000" for 127.0.0.1 at 2011-06-09 18:10:19 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Informática", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.3ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Informática%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.3ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Informática%') ORDER BY organ_name
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Informática%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (7.0ms)
+Completed 200 OK in 26ms (Views: 9.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/departments/2" for 127.0.0.1 at 2011-06-09 18:10:19 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"2"}
+  [1m[35mDepartment Load (0.2ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 2 LIMIT 1
+Rendered departments/specific.xml.builder (7.1ms)
+Completed 200 OK in 17ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/search?keyword=Departamento+de+Engenharia+Electrot%C3%A9cnica&start=1&end=5000" for 127.0.0.1 at 2011-06-09 18:10:47 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Engenharia Electrotécnica", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (7.0ms)
+Completed 200 OK in 25ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/departments/7" for 127.0.0.1 at 2011-06-09 18:10:47 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 7 LIMIT 1
+Rendered departments/specific.xml.builder (7.3ms)
+Completed 200 OK in 16ms (Views: 9.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/search?keyword=Departamento+de+Engenharia+Electrot%C3%A9cnica&start=1&end=5000" for 127.0.0.1 at 2011-06-09 18:14:37 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Engenharia Electrotécnica", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (7.1ms)
+Completed 200 OK in 25ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/7" for 127.0.0.1 at 2011-06-09 18:14:37 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 7 LIMIT 1
+Rendered departments/specific.xml.builder (6.9ms)
+Completed 200 OK in 16ms (Views: 9.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/search?keyword=Departamento+de+Engenharia+Electrot%C3%A9cnica&start=1&end=5000" for 127.0.0.1 at 2011-06-09 18:53:22 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Engenharia Electrotécnica", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (0.1ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.1ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY organ_name
+  [1m[36mService Load (0.1ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (7.3ms)
+Completed 200 OK in 26ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/7" for 127.0.0.1 at 2011-06-09 18:53:22 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"7"}
+  [1m[35mDepartment Load (0.1ms)[0m  SELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 7 LIMIT 1
+Rendered departments/specific.xml.builder (7.3ms)
+Completed 200 OK in 18ms (Views: 9.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/search?keyword=Departamento+de+Engenharia+Electrot%C3%A9cnica&start=1&end=5000" for 127.0.0.1 at 2011-06-09 23:38:00 +0100
+  Processing by OrgUnitsController#search as XML
+  Parameters: {"keyword"=>"Departamento de Engenharia Electrotécnica", "start"=>"1", "end"=>"5000"}
+  [1m[36mDepartment Load (18.5ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE (department_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY department_name[0m
+  [1m[35mOrgan Load (0.4ms)[0m  SELECT `organs`.* FROM `organs` WHERE (organ_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY organ_name
+  [1m[36mService Load (0.3ms)[0m  [1mSELECT `services`.* FROM `services` WHERE (service_name like '%Departamento de Engenharia Electrotécnica%') ORDER BY service_name[0m
+Rendered org_units/search.xml.builder (26.2ms)
+Completed 200 OK in 102ms (Views: 34.9ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/departments/7" for 127.0.0.1 at 2011-06-09 23:38:01 +0100
+  Processing by DepartmentsController#specific as XML
+  Parameters: {"id"=>"7"}
+  [1m[35mSQL (27.8ms)[0m  SHOW TABLES
+  [1m[36mDepartment Load (0.3ms)[0m  [1mSELECT `departments`.* FROM `departments` WHERE `departments`.`id` = 7 LIMIT 1[0m
+Rendered departments/specific.xml.builder (7.6ms)
+Completed 200 OK in 46ms (Views: 10.5ms | ActiveRecord: 28.1ms)

@@ -1,4 +1,4 @@
-xml.record(:title => "Secção") do
+xml.record(:title => "Secção: " + @sections.section_name) do
   xml.text(@sections.section_name, :title => "Nome")
   xml.text(@sections.schedule, :title => "Horário")
   @location = @sections.building

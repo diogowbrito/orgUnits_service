@@ -1,4 +1,4 @@
-xml.record(:title => "Serviço") do
+xml.record(:title => "Serviço: " + @services.service_name) do
   xml.text(@services.service_name, :title => "Nome")
   @location = @services.building
   @kind = "building"
