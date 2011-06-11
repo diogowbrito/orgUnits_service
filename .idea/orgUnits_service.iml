@@ -68,6 +68,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.1.pre.4, /home/pedro/.rvm/gems/ruby-1.9.2-p180@global/gems/bundler-1.1.pre.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mysql2 (v0.3.2, /home/pedro/.rvm/gems/ruby-1.9.2-p180@global/gems/mysql2-0.3.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] cocaine (v0.1.0, /home/pedro/.rvm/gems/ruby-1.9.2-p180/gems/cocaine-0.1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] cocaine (v0.1.0, /home/jphorta/.rvm/gems/ruby-1.9.2-p180/gems/cocaine-0.1.0)" level="application" />
   </component>
 </module>
 

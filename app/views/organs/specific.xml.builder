@@ -1,4 +1,4 @@
-xml.record(:title => "Orgão") do
+xml.record(:title => "Orgão: " + @organs.organ_name) do
   xml.text(@organs.organ_name, :title => "Nome")
   @location = @organs.building
   @kind = "building"
@@ -21,15 +21,17 @@ xml.record(:title => "Orgão") do
     xml.text(@organs.extension, :title => "Extensão")
   end
   xml.text(@organs.fax, :title => "Fax")
-  xml.text(:title => "Secretariado") do
-    @secretary.each do |ele|
-      xml.text(:title => "Secretária") do
-        xml.entity(ele.secretary_name, :title => "Nome", :kind => "person")
-        if ele.email != nil then
-          xml.email(ele.email, :title => "Emails")
+  if @secretary.count != 0 then
+      xml.text(:title => "Secretariado") do
+        @secretary.each do |ele|
+          xml.text(:title => "Secretária") do
+            xml.entity(ele.secretary_name, :title => "Nome", :kind => "person")
+            if ele.email != nil then
+              xml.email(ele.email, :title => "Emails")
+            end
+          end
         end
       end
-    end
   end
 
 end
