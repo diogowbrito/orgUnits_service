@@ -20,6 +20,7 @@ class ServicesController < ApplicationController
   end
 
   def specific
+    @address = get_address
     @services = Service.find(params[:id])
     @sections = Section.where(:service_id => @services)
     respond_to :xml

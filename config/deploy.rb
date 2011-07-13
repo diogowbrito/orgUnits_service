@@ -2,9 +2,9 @@
 ## Application ##
 #################
 
-set :application, "OrgUnits"
+set :application, "orgUnits"
 set :repository,  "git://github.com/alaxid/orgUnits_service.git"
-set :deploy_to, "/var/www/concierge/OrgUnits"
+set :deploy_to, "/var/www/concierge/orgUnits"
 #set :deploy_via, :remote_cache
 
 set :scm, :git

@@ -62,6 +62,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.7, /home/pedro/.rvm/gems/ruby-1.9.2-p180@global/gems/activesupport-3.0.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.7, /home/pedro/.rvm/gems/ruby-1.9.2-p180/gems/rack-test-0.5.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.7, /home/pedro/.rvm/gems/ruby-1.9.2-p180/gems/activemodel-3.0.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mysql2 (v0.3.6, /home/pedro/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.3.6)" level="application" />
   </component>
 </module>
 

@@ -29,7 +29,7 @@ xml.record(:title => "Serviço: " + @services.service_name) do
   end
   xml.text(:title => "Secções") do
     @sections.each do |section|
-      xml.link(section.section_name, :href => "http://localhost:3003/sections/"+section.id.to_s)
+      xml.link(section.section_name, :href => @address+"/sections/"+section.id.to_s)
     end
   end
 end
